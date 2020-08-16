@@ -1,7 +1,7 @@
 import React, { Component }  from 'react';
-import './App.css';
+import './textBar.css';
 
-class App extends Component {
+class textBar extends Component {
   constructor() {
     super();
 
@@ -15,12 +15,9 @@ class App extends Component {
   render() {
     return(
       <>
-        <div className="chatList">
-
-        </div>
       </>
     )
   }
 }
 
-export default App;
+export default textBar
