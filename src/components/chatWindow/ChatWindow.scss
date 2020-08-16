@@ -1,0 +1,15 @@
+.message-list {
+    width: 95%;
+    margin: 0 auto;
+    border: 1px black;
+    overflow-y: scroll;
+    height: 95vh;
+}
+
+.message {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+}
