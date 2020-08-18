@@ -14,9 +14,7 @@ const DUMMY_DATA = [
 ]
 
 const contextObject = {messages: DUMMY_DATA, sendMessage: () => {
-    
 }}
-
 
 export const Context = createContext(contextObject);
 

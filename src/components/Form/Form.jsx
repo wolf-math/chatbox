@@ -6,12 +6,12 @@ const setInputText = (set) => (e) => {
   set(e.target.value)
 }
 
-const handleSubmit = (sendMessage) => (e) => {
+const handleSubmit = (sendMessage, username, message) => (e) => {
   console.log(e)
-  sendMessage({senderID: "Aaron", text: "Wolf" })
+  sendMessage({senderID: username, text: message })
   e.preventDefault()
+  console.log(e.values)
 }
-
 
 const Form = () => {
   const [message, setMessage] = useState('')
@@ -22,7 +22,7 @@ const Form = () => {
   console.log(contextMessage)
   return(
     <div className="a1">
-      <form onSubmit={handleSubmit(sendMessage)}>
+      <form onSubmit={handleSubmit(sendMessage, username, message)}>
         <div>
           <input type='text' 
             size="50"
@@ -44,6 +44,5 @@ const Form = () => {
     </div>
   )
 }
-
 
 export default Form;
